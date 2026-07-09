@@ -66,5 +66,5 @@ def compare_depth():
 
 
 if __name__ == "__main__":
-    compare_core_size()
+    #compare_core_size()
     compare_depth()

@@ -14,8 +14,8 @@ models_mist = {
     "residual_cnn": CNNWithResidual(input_channels=1, num_classes=10).to(device)
 }
 models_cifar = {
-    "fc": FCModelCIFAR().to(device),
-    "residual_cnn": CIFARCNN(num_classes=10, dropout=None).to(device),
+    "fc_cifar": FCModelCIFAR().to(device),
+    "residual_cnn_cifar": CIFARCNN(num_classes=10, dropout=None).to(device),
     "dropout_residual_cnn": CIFARCNN(num_classes=10, dropout=0.4).to(device)
 }
 
@@ -62,5 +62,5 @@ def compare_cifar():
 if __name__ == "__main__":
     print(f"Using device: {device}")
 
-    compare_mnist()
-    #compare_cifar()
+    #compare_mnist()
+    compare_cifar()

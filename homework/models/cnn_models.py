@@ -159,7 +159,7 @@ class CNNDepth(nn.Module):
         super().__init__()
         self.conv1 = nn.Sequential(
             nn.Conv2d(3, 32, 3, padding=1, bias=False),
-            nn.BatchNorm2d(32), nn.ReLU(), nn.MaxPool2d(2))
+            nn.BatchNorm2d(32), nn.ReLU())
         layers = []
         in_ch = 32
         out_ch = 64
@@ -168,12 +168,12 @@ class CNNDepth(nn.Module):
                 nn.Conv2d(in_ch, out_ch, 3, padding=1, bias=False),
                 nn.BatchNorm2d(out_ch),
                 nn.ReLU()]
-            if i % 2 == 1:
+            if i % 2 == 0:
                 layers.append(nn.MaxPool2d(2))
             in_ch = out_ch
             out_ch = min(out_ch * 2, 256)
         self.features = nn.Sequential(*layers)
-        self.classifier = nn.Sequential(nn.AdaptiveAvgPool2d(1), nn.Flatten(), nn.Linear(out_ch, num_classes))
+        self.classifier = nn.Sequential(nn.AdaptiveAvgPool2d(1), nn.Flatten(), nn.Linear(in_ch, num_classes))
 
     def forward(self, x):
         return self.classifier(self.features(self.conv1(x)))
