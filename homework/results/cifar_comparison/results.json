@@ -1,20 +1,20 @@
 {
-  "fc": {
-    "test_acc": 0.5337,
-    "train_acc": 0.64146,
-    "time": 164.24812626838684,
+  "fc_cifar": {
+    "test_acc": 0.5317,
+    "train_acc": 0.63736,
+    "time": 164.6584312915802,
     "params": 3837066
   },
-  "residual_cnn": {
-    "test_acc": 0.7935,
-    "train_acc": 0.92698,
-    "time": 221.5053791999817,
+  "residual_cnn_cifar": {
+    "test_acc": 0.8251,
+    "train_acc": 0.92532,
+    "time": 221.85391235351562,
     "params": 483530
   },
   "dropout_residual_cnn": {
-    "test_acc": 0.8541,
-    "train_acc": 0.9013,
-    "time": 222.14295053482056,
+    "test_acc": 0.8118,
+    "train_acc": 0.89974,
+    "time": 229.9941530227661,
     "params": 483530
   }
 }
