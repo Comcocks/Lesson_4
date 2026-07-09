@@ -59,7 +59,7 @@
 |Parameters| 77130 | 77130 | 141602 |
 
 ![image](homework/plots/custom_layers/customlayers_compare.png)
-
+Добавление **Attention механизма** и **pooling слоя** заметно увеличивает точность, но в то же время кратно возрастает число параметров. Функция активаци **mish** немного поднимает точность и время обучения.
 
 ### 3.2 Эксперименты с Residual блоками
 || ResidualBasic | ResidualBottleneck | ResidualWide |
