@@ -1,0 +1,20 @@
+{
+  "BaselineCNN": {
+    "test_acc": 0.5687,
+    "train_acc": 0.63512,
+    "time": 178.71129512786865,
+    "params": 77130
+  },
+  "MishCNN": {
+    "test_acc": 0.5996,
+    "train_acc": 0.63072,
+    "time": 184.1585168838501,
+    "params": 77130
+  },
+  "AttentionCNN": {
+    "test_acc": 0.6863,
+    "train_acc": 0.79338,
+    "time": 183.0545163154602,
+    "params": 141602
+  }
+}

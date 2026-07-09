@@ -1,0 +1,20 @@
+{
+  "ResidualBasic": {
+    "test_acc": 0.7448,
+    "train_acc": 0.85302,
+    "time": 179.47334146499634,
+    "params": 150474
+  },
+  "ResidualBottleneck": {
+    "test_acc": 0.6674,
+    "train_acc": 0.68744,
+    "time": 176.94787907600403,
+    "params": 11594
+  },
+  "ResidualWide": {
+    "test_acc": 0.8143,
+    "train_acc": 0.83336,
+    "time": 183.4187068939209,
+    "params": 298186
+  }
+}

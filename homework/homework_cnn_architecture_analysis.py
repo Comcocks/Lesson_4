@@ -57,9 +57,9 @@ def compare_depth():
         criterion(m(x), y).backward()
 
         norms = {}
-        for n, param in m.named_parameters():
+        for i, param in m.named_parameters():
             if param.grad is not None:
-                norms[n] = param.grad.norm().item()
+                norms[i] = param.grad.norm().item()
 
         plot_gradient(norms, f'plots/cnn_architecture/{n}_gradient.png')
         plot_feature_maps(m.to(device), img.to(device), f'plots/cnn_architecture/{n}_feature_maps.png', )

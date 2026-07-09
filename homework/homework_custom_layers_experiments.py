@@ -25,7 +25,7 @@ def compare_custom_layers():
     for n, m in models.items():
         results[n] = run_model(n, m, train_loader, test_loader, device, "plots/custom_layers")
 
-    compare_models(results, save_path="plots/custom_layers/layers_compare.png")
+    compare_models(results, save_path="plots/custom_layers/customlayers_compare.png")
     save_results(results, "results/custom_layers/layers.json")
 
 
@@ -48,4 +48,4 @@ if __name__ == '__main__':
     print(f"Using device: {device}\n")
 
     compare_custom_layers()
-    compare_residual_blocks()
+    #compare_residual_blocks()
