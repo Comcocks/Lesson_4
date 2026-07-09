@@ -1,26 +1,26 @@
 {
   "CNN_shallow": {
-    "test_acc": 0.546,
-    "train_acc": 0.56492,
-    "time": 178.29119324684143,
+    "test_acc": 0.5583,
+    "train_acc": 0.56654,
+    "time": 180.2972960472107,
     "params": 20138
   },
   "CNN_medium": {
-    "test_acc": 0.7259,
-    "train_acc": 0.83406,
-    "time": 216.49818110466003,
+    "test_acc": 0.7345,
+    "train_acc": 0.83866,
+    "time": 216.21411275863647,
     "params": 391466
   },
   "CNN_deep": {
-    "test_acc": 0.8098,
-    "train_acc": 0.96422,
-    "time": 250.5824453830719,
+    "test_acc": 0.825,
+    "train_acc": 0.96288,
+    "time": 261.5272331237793,
     "params": 1572138
   },
   "CNN_residual": {
-    "test_acc": 0.8077,
-    "train_acc": 0.89926,
-    "time": 216.1683886051178,
+    "test_acc": 0.8283,
+    "train_acc": 0.89502,
+    "time": 219.70434308052063,
     "params": 483530
   }
 }
